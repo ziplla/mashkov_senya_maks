@@ -18,6 +18,17 @@ public class Supplier {
     @Column(name = "contact_info", columnDefinition = "TEXT")
     private String contactInfo;
 
+    @Column(nullable = false)
+    private String adress;
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+
     public Long getSupplierId() {
         return supplierId;
     }
